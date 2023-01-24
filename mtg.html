@@ -1,17 +1,56 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Magic The Gathering Card List</title>
+  <title>CardWiki</title>
+  <link href="https://fonts.cdnfonts.com/css/pokemon-solid" rel="stylesheet">
   <link rel="stylesheet" href="main.css">
+
 </head>
 <body>
-  <h1>Magic The Gathering AND Pokemon!!</h1>
-  <button id="discover-button">Discover Magic the Gathering </button>
+  <div>
+    <div class="wave"></div>
+    <div class="wave"></div>
+    <div class="wave"></div>
+ </div>
+  <h1>Welcome to CardWiki!</h1>
+  <P id = 'newitems'>Currently only MTG and Pokemon are supported, Stay tuned for more!</P>
+  <h1 id ='today-info'>Here is a random fact about today!</h1>
+  <div>
+  <details>
+    <nav class="menu">
+      <a <button id="discover-button"> </button>
+       Magic </a>
+      <a <button id="discover-pokemon"> </button>Pokemon</a>
+      <a <button id="discover-yugi"> </button>Yugioh</a>
+      <a <button id="discover-d&d"> </button>D&D</a>
+      <a <button id="discover-uno"> </button>Uno</a>
+    </nav>
+  </details>
+</div>
+  <div id="container">
   <label for="search" style="display:none">Find your Card:</label>
   <input type="search" id="search" name="q" style="display:none">
   <button id="search-button" style="display:none"> Search</button>
   
   <ul id="card-list" style="display:none"></ul>
+  <header>
+  </header>
+<h3 id="random-poke", style="font-weight: bold">Now here is a random <span style = 'font-family: Pokemon Solid, sans-serif'>PoKeMoN</span> to start off your day!</h3>
+<div id = 'header'>
+</div> 
+<h3 id="search-poke"> Not your kind of Pokemon? Give me your lucky number and we'll present you another one!
+</h3>
+<div >
+    <form id="api">
+        <label>Pokemon Search<label>
+        <input type="text" name="search"></input>
+        <input type="submit"></input>
+    </form>
+</div>
+<div id="new-search">
+    <h3 id="newPoke"></h3>
+</div>
+</div>
   <script src="main.js"></script>
 </body>
 </html>
